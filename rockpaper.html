@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    
+    <title>Rock | Paper | Scissors</title>
+    
+    <meta charset="utf-8">
+    
+    <!-- fix mobile sizing-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link type="text/css" rel="stylesheet" href="normalize.css">    
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <script type="text/javascript" src="rps.js"></script>    
+    <script type="text/javascript" src="ai.js"></script>
+    <script type="text/javascript" src="aipredict.js"></script>
+    
+    <h1>ROCK | PAPER | SCISSORS</h1>
+    <h2>Sonika | Kumar |Pavan|Gladson</h2>
+
+    <hr>
+    
+    <div class="gameControl">
+        <div>Random</div>
+        <label class="switch">
+            <input type="checkbox" id="aiCheck" onClick="resetGame()" checked>
+            <span class="slider round"></span>
+        </label>
+        <div>AI</div>
+        <button id="resetButton" onclick="resetGame()">Reset</button>
+    </div>
+    
+    <div class="result" id="result">RESULT</div>
+    
+    <div class="gameColumn">
+        <div class="playerMove">
+            <div class="playerMoveContain">
+                <img src="images/unknown.png" id="playerMoveImage">
+                <div id="playerMoveText">PlayerMove</div>
+            </div>
+
+            <button onclick="playerThrow('Rock')">Rock</button>
+            <button onclick="playerThrow('Paper')">Paper</button>
+            <button onclick="playerThrow('Scissors')">Scissors</button>
+        </div>
+
+    </div>
+    <div class="gameColumn">
+        <div class="aiMove">
+            <div class="aiMoveContain">
+                <img src="images/unknown.png" id="aiMoveImage">
+                <div id="aiMoveText">AIMove</div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <hr id="scoreTop">
+    <div class="score">
+        <span id="playerScore">-</span>    
+
+        <span id="aiScore">-</span>
+    </div>
+    <hr id="scoreBottom">
+    
+    <table>
+        <tr id="rowh">
+            <th>Move</th>
+            <th>Player</th>
+            <th>AI</th>
+            <th>Winner</th>
+        </tr>
+        <tr id="row0">
+            <td>Last Move</td>
+            <td id="player0">-</td>
+            <td id="ai0">-</td>
+            <td id="winner0">-</td>
+        </tr>
+        <tr id="row1">
+            <td>2 Moves Ago</td>
+            <td id="player1">-</td>
+            <td id="ai1">-</td>
+            <td id="winner1">-</td>
+        </tr>
+        <tr id="row2">
+            <td>3 Moves Ago</td>
+            <td id="player2">-</td>
+            <td id="ai2">-</td>
+            <td id="winner2">-</td>
+        </tr>
+        <tr id="row3">
+            <td>4 Moves Ago</td>
+            <td id="player3">-</td>
+            <td id="ai3">-</td>
+            <td id="winner3">-</td>
+        </tr>
+        <tr id="row4">
+            <td>5 Moves Ago</td>
+            <td id="player4">-</td>
+            <td id="ai4">-</td>
+            <td id="winner4">-</td>
+        </tr>
+        
+    </table>
+    
+    <footer>&copy; Pavan|Sonika|kumar|Gladson</footer>
+</body>
+</html>
+
+<!-- Open Hand by icon 54 from the Noun Project -->
+<!-- Fist by Isabel Foo from the Noun Project   -->
+<!-- Peace by Piero Borgo from the Noun Project -->
