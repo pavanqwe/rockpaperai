@@ -1,2 +1,3 @@
 # rockpaperai
-this repository is created to create to create artificia intelligence  game of rock paper scissor
+simple ai  rock paper scissor game using html,css and Js in simple language
+
